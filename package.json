@@ -1,0 +1,15 @@
+{
+  "name": "datadog-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "cd backend && npm run start",
+    "web": "cd front && lite-server",
+    "start": "concurrently \"npm run server\" \"npm run web\""
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "lite-server": "^2.6.1"
+  }
+}

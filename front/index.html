@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="checkout-panel">
+      <form id="checkoutForm" class="panel-body">
+        <h2 class="title">Checkout</h2>
+
+        <div class="progress-bar">
+          <div class="step active"></div>
+          <div class="step active"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+
+        <div class="payment-method">
+          <label for="card" class="method card">
+            <div class="card-logos">
+              <img id="boleto-logo" src="assets/boleto.png" />
+            </div>
+
+            <div class="radio-input">
+              <input id="card" type="radio" name="payment" value="boleto" />
+              Pagar R$20,99 com Boleto
+            </div>
+          </label>
+
+          <label for="paypal" class="method paypal">
+            <img src="assets/paypal_logo.png" />
+            <div class="radio-input">
+              <input id="paypal" type="radio" name="payment" value="paypal" />
+              Pagar R$20,99 com PayPal
+            </div>
+          </label>
+        </div>
+
+        <input type="hidden" name="amount" value="2099" />
+      </form>
+
+      <div class="panel-footer">
+        <button id="next" class="btn next-btn">Próximo</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
