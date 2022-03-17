@@ -10,4 +10,4 @@ Para executar o projeto, após as instalações, rode `npm start` pelo terminal,
 
 A aplicação já está isntrumentada com o Datadog. 
 
-Você só precisa instalar o agent na sua máquina, reiniciar a aplicação, executar a aplicação e consultar os erros no Datadog em ```APM > Traces````
+Você só precisa instalar o agent na sua máquina, reiniciar a aplicação, executar a aplicação e consultar os erros no Datadog em ```APM > Traces```
