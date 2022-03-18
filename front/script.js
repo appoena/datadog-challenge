@@ -25,9 +25,6 @@ next.onclick = function (e) {
     return
   }
 
-  //NÃO ESQUECER! Remover essa linha antes de subir pra produção
-  amount = null
-
   // create checkout
   createCheckout({ amount, type }).then(data => {
     if (data.status === 200) {
