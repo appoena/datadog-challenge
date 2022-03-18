@@ -8,7 +8,7 @@ function createCheckout({ amount, type }) {
     },
     body: JSON.stringify({ amount, type })
   })
-    .then(response => {return response})
+    .then(response => { return response })
     .catch(error => {
       console.log(error)
     })
@@ -25,14 +25,11 @@ next.onclick = function (e) {
     return
   }
 
-  //NÃO ESQUECER! Remover essa linha antes de subir pra produção
-  amount = null
-
   // create checkout
   createCheckout({ amount, type }).then(data => {
     if (data.status === 200) {
       window.location.href = `/checkout.html`
-    }else{
+    } else {
       window.location.href = `/erro.html`
     }
 
