@@ -1,6 +1,4 @@
 const Checkout = require('../database/model/checkout');
-
-
 class CheckoutController {
   Register(request, response) {
     try{
