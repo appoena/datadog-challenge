@@ -9,11 +9,11 @@ class CheckoutController {
         const checkoutCreated = Checkout.create({ type, amount });
         response.status(200).json(checkoutCreated);
       } else{
-        span.setTag('error.msg', "Valor de 'amount' chegou nulo");
+        console.log('error.msg', "Valor de 'amount' chegou nulo");
         response.status(500).send();
       }
     }catch(error){
-        span.setTag('error', error)
+        console.log('error', error)
         response.status(500).send();
     }
     
