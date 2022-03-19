@@ -9,14 +9,14 @@ class CheckoutController {
     try{
       const { amount, type} = request.body;
       if (amount) {
-        const checkoutCreated = Checkout.create({ typerrrrr, amount });
+        const checkoutCreated = Checkout.create({ type, amount });
         response.status(200).json(checkoutCreated);
       } else{
         span.setTag('error.msg', "Valor de 'amount' chegou nulo");
         response.status(500).send();
       }
     }catch(error){
-        span.setTag('error', error)
+        span.setTag('error.msg', error)
         response.status(500).send();
     }
     

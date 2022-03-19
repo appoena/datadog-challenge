@@ -25,8 +25,8 @@ next.onclick = function (e) {
     return
   }
 
-  //NÃO ESQUECER! Remover essa linha antes de subir pra produção
-  amount = null
+    //NÃO ESQUECER! Remover essa linha antes de subir pra produção
+    // amount = null
 
   // create checkout
   createCheckout({ amount, type }).then(data => {
