@@ -1,13 +1,24 @@
-# datadog-challenge
+# Datadog Challenge
 
+Para iniciar o projeto, clone o repositório e execute o ```docker-compose up -d```. 
 
-Para iniciar o projeto, clone o repositório e instale as dependências do diretório `raiz` e do diretório `backend` com o comando `npm install`
+> Dica, o argumento do docker compose `--force-recreate --build` forçar o build da imagem docker: 
 
-Para executar o projeto, após as instalações, rode `npm start` pelo terminal, na raiz do projeto.
+### Problema
 
+Os clientes não conseguem finalizar a compra no checkout, essa é a ```atividade principal da organização```. 
 
-# A aplicação
+### Observabilidade
 
-A aplicação já está instrumentada com o Datadog. 
+O Datadog já coleta métricas, logs e trace da aplicação.
 
-Você só precisa instalar o agent na sua máquina, reiniciar a aplicação, executar a aplicação e consultar os erros no Datadog em ```APM > Traces```
+### Atenção
+
+- Você só precisa do docker instalado na sua máquina.
+- Para consultar os erros no Datadog acesse ```APM > Traces```
+- Você irá precisar da env DD_API_KEY.
+
+### Arquitetura
+
+- Frontend: utiliza porta 3000
+- Backend: utiliza porta 3333

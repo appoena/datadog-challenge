@@ -1,7 +1,6 @@
 {
-  "name": "datadog-api-simple",
+  "name": "backend",
   "version": "1.0.0",
-  "env": "producao",
   "description": "",
   "main": "src/index.js",
   "scripts": {
